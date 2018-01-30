@@ -1,0 +1,31 @@
+ \setlength{\textwidth}{16.2cm}
+ \setlength{\textheight}{24cm}
+ \setlength{\oddsidemargin}{0cm}
+ \setlength{\evensidemargin}{-0.5cm}
+
+ %unbedingt nach abmessungen einfügen!
+ \usepackage{fancyhdr}
+ \pagestyle{fancy}
+ %\sloppy % für weniger absatzfehler
+
+ \setcounter{tocdepth}{2}
+ \setcounter{secnumdepth}{2}
+
+ \ifreportelse{\numberwithin{equation}{chapter}}{\numberwithin{equation}{section}}
+ \theoremstyle{plain}% default
+ \ifreportelse{\newtheorem{thm}{Theorem}[chapter]}{\newtheorem{thm}{Theorem}[section]}
+
+ \newtheorem{satz}{Satz}
+ \newtheorem{lem}[thm]{Lemma}
+ \newtheorem{prop}[thm]{Proposition}
+ \newtheorem{kor}[thm]{Korollar}
+ \newtheorem{cor}[thm]{Corollary}
+
+ \theoremstyle{definition}
+ \newtheorem{defi}{Definition}
+
+ \def\@proof{%
+  \if@englishpreamble{Proof}\else{Beweis}\fi
+ }
+ \newenvironment{bew}{\begin{proof}[\@proof]}{\end{proof}}
+

@@ -1,0 +1,78 @@
+\NeedsTeXFormat{LaTeX2e}[2005/12/01]
+%%    2010/04/06 v1.0 Vorlage Master-Forschungspraktikum Versuchsauswertung
+%%    based on the 2009/10/14 v0.1 GAUBM template by Prof Pruschke
+
+\documentclass[twoside,        %% zweiseitiges Layout
+               BCOR12mm,       %% Bindekorrektur 12 mm
+% please comment out if report is in English
+               english,ngerman, %% Dokumentspr. Deutsch, Alternativspr. Englisch
+% please remove comment if report is in English 
+%               ngerman,english, %% Dokumentspr. Englisch, Alternativspr. Deutsch
+               fleqn,headsepline=false,footsepline=false
+              ]{MFPREPORT}
+
+%% Pakete und Definitionen ausgelagert
+\input{packages}
+\input{layout}
+
+%% einbinden einiger nützlicher Befehle
+\input{shortcuts}
+
+\begin{document}
+\LabratoryName{AG.TIM}{Numerische Simulationen von Turbulenz im interstellaren Medium}
+\ProtocolAuthor{Mein Vorname}{Nachname}{meine@email}
+\Assistant{Betr. Vorname}{Nachname}
+\ResearchFocus{Astro- und Geophysik (M.phy.401)}
+% In der naechsten Version beruecksichtigt
+%\Collaborator{Vorname}{Nachname}{email}
+\ConductedOn{15}{4}{2010}
+\date{\today}
+% eines von beiden
+\CopyNotWanted
+%\CopyWanted
+
+\pagenumbering{roman}
+\maketitle
+
+%\begin{otherlanguage}{english}
+%\end{otherlanguage}
+
+\tableofcontents
+
+\clearpage
+\pagenumbering{arabic}
+
+\section{\"Uberschrift}
+Hier geht es los. Bitte alle Quellen (auch Internetseiten) angeben.
+
+
+\subsection{Unterabschnitt}
+
+
+\ldots
+
+
+\paragraph{Unter-Unterabschnitt} Text schlie\ss{}t direkt an.
+
+\ldots
+
+\clearpage
+
+%\appendix
+%
+%\section{Anhang}
+%
+%
+%\ldots
+%
+%\clearpage
+
+% nicht unbedingt erforderlich
+%\listoffigures
+% nicht unbedingt erforderlich
+%\listoftables
+
+\bibliography{lit}
+
+\end{document}
+

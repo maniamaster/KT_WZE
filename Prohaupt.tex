@@ -1,0 +1,93 @@
+\NeedsTeXFormat{LaTeX2e}[2005/12/01]
+%%    2010/04/06 v1.0 Vorlage Master-Forschungspraktikum Versuchsauswertung
+%%    based on the 2009/10/14 v0.1 GAUBM template by Prof Pruschke
+
+\documentclass[twoside,        %% zweiseitiges Layout
+               BCOR12mm,       %% Bindekorrektur 12 mm
+% please comment out if report is in English
+%               english,ngerman, %% Dokumentspr. Deutsch, Alternativspr. Englisch
+% please remove comment if report is in English 
+               ngerman,english, %% Dokumentspr. Englisch, Alternativspr. Deutsch
+               fleqn,headsepline=false,footsepline=false
+              ]{Vorlage/MFPREPORT}
+\makeatletter
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
+\makeatother
+
+%% Pakete und Definitionen ausgelagert
+\input{Vorlage/packages}
+\input{Vorlage/layout}
+
+%% einbinden einiger nützlicher Befehle
+\input{Vorlage/shortcuts}
+
+%Zur Formatierung in der Matheumgebung
+\renewcommand{\t}{\ensuremath{\rm\tiny}} % Tiefgestellter Text in der Matheumgebung wird schoener mit: $\Phi_{\t{Text}}$
+\renewcommand{\d}{\ensuremath{\mathrm{d}}} % Die totale Ableitung ist stets aufrecht zu setzen: \d
+\newcommand{\diff}[3][]{\ensuremath{\frac{\d^{#1}#2}{\d#3^{#1}}}} % einfache Ableitung nach x: $\ddx{\Phi}$
+\newcommand{\pdiff}[3][]{\ensuremath{\frac{\partial^{#1}#2}{\partial#3^{#1}}}} % wie gesprochen, eine partielle Ableitung: \del
+\newcommand{\aeqiv}{\ensuremath{\qquad \Longleftrightarrow \qquad}} % Eine Aequivalenz
+\newcommand{\folgt}{\ensuremath{\qquad \Longrightarrow \qquad}} % Ein Folgepfeil mit Abstaenden
+\newcommand{\corresponds}{\ensuremath{\mathrel{\widehat{=}}}} % Befehl für "Entspricht"-Zeichen
+\newcommand{\mi}[1]{\ensuremath{\mathit{#1}}} % italics für griechische Buchstaben in Matheumgebung
+
+%Um nicht so viel schreiben zu müssen...
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\wtilde}[1]{\widetilde{#1}}
+\newcommand{\mrm}[1]{\mathrm{#1}}
+\newcommand{\mbf}[1]{\mathbf{#1}}
+\newcommand{\mbb}[1]{\mathbb{#1}}
+\newcommand{\mcal}[1]{\mathcal{#1}}
+\newcommand{\mfrak}[1]{\mathfrak{#1}}
+
+%Abkürzungen
+\newcommand{\zB}{z.\,B.\ }
+\newcommand{\bzw}{b.\,z.\, w.\ }
+\newcommand{\Dh}{d.\,h.\ }
+\newcommand{\Gl}{Gl.\ }
+\newcommand{\Abb}{Abb.\ }
+\newcommand{\Tab}{Tab.\ }
+
+
+\begin{document}
+\LabratoryName{KT.WZE}{W/Z experiment at the Tevatron}
+\ProtocolAuthor{Eric}{Bertok}{eric.bertok@stud.uni-goettingen.de}
+\Assistant{Dr. J. Veatch}{}
+\ResearchFocus{Nuclear and particle physics (M.phy.404)}
+\ConductedOn{24}{01}{2018}
+\date{\today}
+% eines von beiden
+\CopyNotWanted
+%\CopyWanted
+
+\pagenumbering{roman}
+\maketitle
+
+%\begin{otherlanguage}{english}
+%\end{otherlanguage}
+
+\tableofcontents
+
+\clearpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+\label{sec:introduction}
+\section{Theory}
+\label{sec:theory}
+\section{Execution}
+\label{sec:execution}
+\section{Analysis}
+\label{sec:analysis}
+\section{Discussion}
+
+\bibliography{literatur}
+\end{document}
+

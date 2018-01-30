@@ -1,0 +1,48 @@
+\newcommand{\iflanggerman}[2]{
+ \iflanguage{german}{#1}{
+  \iflanguage{ngerman}{#1}{#2}
+ }
+}
+
+% box around the whole equation, number inclusive
+\newcommand{\boxedeqn}[1]{%
+  \[\fbox{%
+      \addtolength{\linewidth}{-2\fboxsep}%
+      \addtolength{\linewidth}{-2\fboxrule}%
+      \begin{minipage}{\linewidth}%
+      \begin{equation}#1\end{equation}%
+      \end{minipage}%
+    }\]%
+}
+
+\iflanggerman{
+ \newcommand{\const}{\mathrm{konst}}
+ \newcommand{\Const}{\mathrm{konst.}}
+}{
+ \newcommand{\const}{\mathrm{const}}
+ \newcommand{\Const}{\mathrm{const.}}
+}
+
+% von Meier
+\newcommand{\nbd}{\nobreakdash-\hspace{0pt}}
+% example: $K$\nbd{}Vektorraum
+\newcommand*{\transpose}[1]{\prescript{t}{}{#1}}
+\newcommand*{\conjugate}[1]{\overline{#1}}
+\newcommand*{\abs}[1]{\lvert#1\rvert}
+\newcommand*{\Mod}{\mathrm{mod}}
+\newcommand{\symdif}{\mathbin\triangle}
+\DeclareMathOperator{\Graph}{Graph}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator*{\grad}{grad}
+\DeclareMathOperator*{\Div}{div}
+\DeclareMathOperator*{\rot}{rot}
+\DeclareMathOperator{\sig}{sig}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Sp}{Sp}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\re}{Re}
+
+\newcommand{\vcentcolon}{\mathop{:}}
+
