@@ -55,6 +55,8 @@
 \newcommand{\Abb}{Abb.\ }
 \newcommand{\Tab}{Tab.\ }
 
+\usepackage{braket}
+
 
 \begin{document}
 \LabratoryName{KT.WZE}{W/Z experiment at the Tevatron}
@@ -80,8 +82,76 @@
 
 \section{Introduction}
 \label{sec:introduction}
+In goal of this experiment is the determination the  of the branching ratio of the $W$ boson
+BR($W\rightarrow\mu\nu$). First, $W$ and $Z$ bosons are reconstructed using
+data provided by the Tevatron collider at Fermilab. By comparing with Monte Carlo
+simulations, selection parameters are obtained, which allow for clean cuts for
+filtering out background events (jets and cosmic source). The mass and the
+transverse mass is then determined for the $Z$ and $W$ boson respectively.
+Finally the branching ratio is calculated from the number of selected events,
+the trigger efficiencies, as well as the reconstruction efficiencies.
+
+
 \section{Theory}
 \label{sec:theory}
+\subsection{Electroweak interaction}
+The GWS theory (Glashow, Weinberg, Salam) is the unified description of both
+the electromagnetic force mediated by the photon and the weak interaction
+mediated by the massive $W^+,W^-$ and the neutral neutral $Z$ boson. It was
+confirmed experimentally in the 1970s \cite{wikigsw}. 
+The gauge bosons are introduced by means of a local SU(2)$_L$ gauge symmetry in
+a weak isospin space. The weak isospin doublets are formed by fermions
+differing by one unit of charge \cite[p.;416]{thomson}. By also replacing the
+U(1) symmetry by a new U(1)$_Y$ symmetry with the ``hypercharge'' $Y$, the
+neutral $Z$ boson can be identified by a linear combination of the neutral
+$W^{(3)}$ boson and the $B$ boson coupling to the hypercharge. More details can
+be found in \cite[p.\;418ff]{thomson}.
+Being a charged boson,
+the $W$ bosons couple to fermions differing by one unit of charge. Furthermore
+it maximally violates parity as it only couples to left-handed particles and
+right-handed antiparticles. The vertex factor is given by \cite[p.;409]{thomson}
+\begin{align}
+    \label{eq:vertexw}
+    -i\frac{g_W}{\sqrt{2}}\frac{1}{2}\gamma^\mu(1-\gamma^5),
+\end{align} where $g_W$ is the weak coupling constant and $\gamma^\mu$ are the
+gamma matrices. The $Z$ boson however, couples to any pair of identical
+fermions, albeit coupling more strongly to left handed ones. This becomes
+apparent in the form of the vertex factor: \cite[p.\;432]{thomson}
+\begin{align}
+    \label{eq:vertexz}
+    -i\frac{1}{2}g_Z \gamma^\mu(c_V-c_A\gamma^5),
+\end{align}
+with the vector and axial vector couplings $c_V$ and $c_A$.
+
+\subsection{Matrix elements and Decay rates}
+The matrix elements for the electroweak interaction can be calculated with the
+appropriate Feynman rules.
+After averaging over the three possible polarizations, the spin-averaged matrix
+element squares is obtained for both the $W$ and the $Z$ boson decaying to a
+lepton and its neutrino or a lepton- anti-lepton pair, respectively
+\cite[p.;242,411]{thomson}:
+\begin{align}
+    \label{eq:spinavg}
+    \braket{|\mathcal{M}_W^2|}&=\frac{1}{3}g_W^2m_W^2\\
+    \braket{|\mathcal{M}_Z^2|}&=\frac{1}{3}(c_V^2+c_A^2)g_Z^2m_Z^2.
+\end{align}
+These can be inserted into the decay rate formula: \cite[p.\;411]{thomson}
+\begin{align}
+    \label{eq:decayrate}
+    \Gamma=\frac{p^*}{32\pi^2m^2}\int
+    \braket{|\mathcal{M}^2|}\d\Omega=\frac{p^*}{8\pi m^2}
+    \braket{|\mathcal{M}^2|},
+\end{align}
+where $m$ is the mass of the boson and $p*$ is the momentum of the lepton in
+the center of mass frame.
+For $e^+-e^-$ colliders such as LEP, one can argue that $p*=m_Z/2$, as the
+decay happens in the centre of mass frame.
+Therefore the decay rate is 
+\begin{align}
+    \label{eq:decay}
+    \Gamma(W^-\rightarrow e^- \bar{\nu}_e)=\frac{g_W^2m_W}{48\pi}.
+\end{align}
+
 \section{Execution}
 \label{sec:execution}
 \section{Analysis}
