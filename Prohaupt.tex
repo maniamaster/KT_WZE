@@ -144,13 +144,68 @@ These can be inserted into the decay rate formula: \cite[p.\;411]{thomson}
 \end{align}
 where $m$ is the mass of the boson and $p*$ is the momentum of the lepton in
 the center of mass frame.
-For $e^+-e^-$ colliders such as LEP, one can argue that $p*=m_Z/2$, as the
-decay happens in the centre of mass frame.
+One can argue that $p*=m_Z/2$, as the
+decay happens in the centre of mass frame of the decaying particle.
 Therefore the decay rate is 
 \begin{align}
     \label{eq:decay}
-    \Gamma(W^-\rightarrow e^- \bar{\nu}_e)=\frac{g_W^2m_W}{48\pi}.
+    \Gamma(W^-\rightarrow e^- \bar{\nu}_e)&=\frac{g_W^2m_W}{48\pi}.\\
+    \Gamma(Z\rightarrow e^- e^+)&=\frac{g_Z^2m_Z}{48\pi}(c_V^2+c_A^2).
 \end{align}
+Lepton universality tells us that this is the same for all three leptonic
+channels when neglecting masses. For hadronic processes, the CKM matrix has to
+be considered, while excluding the top quark, as it is too massive.
+For the $W$ boson, one obtains for the decay width [cite]
+\begin{align}
+\Gamma_W=(3+6 \kappa)\Gamma(W^-\rightarrow e^-
+\bar\nu_e)\approx9.2\;\frac{g_W^2m_W}{48\pi}=2.1\;\text{GeV.}
+    \label{eq:gammaw}
+\end{align}
+$\kappa\approx1.038$ is a correction factor that accounts for second order QCD processes.
+Similarly, for the $Z$ boson, one obtains
+\begin{align}
+    \Gamma_Z\approx2.5\;\text{GeV.}    \label{eq:gammaZ}
+\end{align}
+The branching ratios for the muon channel are therefore
+\begin{align}
+    BR(W\rightarrow\mu\bar\nu_\mu)&=10.8\%,\\
+    BR(Z\rightarrow\mu^+\mu^-)&=3.5\%.
+    \label{eq:branches}
+\end{align}
+\subsection{Invariant and transverse mass}
+For the $Z$ boson one can calculate the functional form of the invariant mass
+peak by taking into account its finite lifetime.
+The cross section for a $q\bar q\rightarrow \mu^+\mu^-$ event is proportional
+to [cite]
+\begin{align}
+    \sigma\propto|\mathcal{M}|^2\propto\left|\frac{1}{q^2-m_Z^2+im_Z\gamma_Z}\right|^2=\frac{1}{(q^2-m_Z^2)^2+m_Z^2\gamma_Z^2},
+    \label{eq:breit}
+\end{align}which is a Breit-Wigner curve.
+$q$ is the invariant mass of both muons. As both can be detected in such an
+event, the Breit-Wigner-curve can be fitted directly to the selected data to
+obtain the mass of the $Z$ boson.
+For the $W$ boson, things are more complicated. Due to the $W$ events only
+having one muon, the undetectable neutrino has to be reconstructed from the
+missing momentum. For a hadronic collider such as the tevatron, the total
+centre of mass energy cannot be known on an event to event basis [cite] due to
+the composite nature of the hadrons. More specifically, the $z$-momentum of the
+interacting partons are unknown, making the invariant mass reconstruction
+impossible. However, one can define the transverse mass $M_T$, which can be
+calculated from the reconstructed transverse momentum of the neutrino
+$\vec{p}_T^\mu$. First, the missing transverse energy $MET$ is determined as
+\begin{align}
+    MET\approx|\bold{p}_T^\nu=|-\bold{p}_T^\mu-\bold{u}_T,
+    \label{eq:met}
+\end{align}where $\vec{u}_T$ is the transverse momentum of the hadrons [cite].
+The transverse mass is then defined as
+\begin{align}
+    M_T=\sqrt{(MET+\bold{p}_T^\mu)^2-(MET_x+p_x^\mu)^2-(MET_y+p_y^\mu)^2}.
+    \label{eq:mt}
+\end{align}
+This quantity is lorantz invariant but does not peak at $M_Z$. However, the $W$
+mass can be read off from the position of the dropoff, as the longitudinal
+component of the invariant mass is then close to zero [cite].
+
 
 \section{Execution}
 \label{sec:execution}
