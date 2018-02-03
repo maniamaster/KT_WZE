@@ -58,6 +58,8 @@
 \usepackage{braket}
 \usepackage{cleveref}
 \usepackage{graphicx, subfigure}
+\usepackage{rotating}
+\usepackage{appendix}
 
 
 \begin{document}
@@ -180,14 +182,14 @@ peak by taking into account its finite lifetime.
 The cross section for a $q\bar q\rightarrow \mu^+\mu^-$ event is proportional
 to [cite]
 \begin{align}
-    \sigma\propto|\mathcal{M}|^2\propto\left|\frac{1}{q^2-m_Z^2+im_Z\gamma_Z}\right|^2=\frac{1}{(q^2-m_Z^2)^2+m_Z^2\Gamma_Z^2},
+    \sigma\propto|\mathcal{M}|^2\propto\left|\frac{1}{q^2-m_Z^2+im_Z\Gamma_Z}\right|^2=\frac{1}{(q^2-m_Z^2)^2+m_Z^2\Gamma_Z^2},
     \label{eq:breit}
 \end{align}which is a Breit-Wigner curve.
 $q$ is the invariant mass of both muons. As both can be detected in such an
 event, the Breit-Wigner-curve can be fitted directly to the selected data to
 obtain the mass of the $Z$ boson.
 For the $W$ boson, things are more complicated. Due to the $W$ events only
-having one muon, the undetectable neutrino has to be reconstructed from the
+having one muon, the undetectable neutrino has to be reconstructed frm the
 missing momentum. For a hadronic collider such as the tevatron, the total
 centre of mass energy cannot be known on an event to event basis [cite] due to
 the composite nature of the hadrons. More specifically, the $z$-momentum of the
@@ -232,9 +234,8 @@ the analysis of the real data.
 To obtain invariant mass peaks for the $Z$- aswell as the transverse mass peak
 for the $W$ boson, the right events have to be selected out of the ~3 million
 events provided. This happens by first fixing a set of object level cuts, which
-define what is counted as a muon. These cuts are counted towards our trigger
-conditions for the muons and are the same for both $W$- and $Z$ boson analysis
-[???]. Secondly, a range of object level cuts have to be performed to single
+define what is counted as a muon. These cuts are the same for both $W$- and $Z$ boson analysis
+. Secondly, a range of object level cuts have to be performed to single
 out the right events for $Z$ and $W$ production respectively. These have to be
 physically motivated by keeping in mind what is expected for the muons in a
 $W$ or $Z$ decay and should also be compared to the monte-carlo simulation. By
@@ -252,14 +253,19 @@ All of the analysis is done with ROOT.
 The $Z$ boson mass distribution for the simulated monte-carlo data is shown in
 \cref{fig:zmcmass}.
 \begin{figure}
-    \subfigure{
+    \subfigure[]{
         \includegraphics[width=0.45\textwidth]{fig/zmc_uncut_zmass.pdf}
         \label{fig:zmcmass}
     }
-    \subfigure{
+    \subfigure[]{
         \includegraphics[width=0.45\textwidth]{fig/data_uncut_zmass.pdf}
         \label{fig:uncutZmass}
     }
+    \caption{$Z$ mass plotted for both monte-carlo (left) and real data (right)
+    without any cuts. One can clearly see the expected mass peak at the monte
+    carlo case, aswell as a leage number of events with very low mass, while in
+    the real data plot, no mass peak is visible yet. For the monte-carlo case,
+    a $\chi^2$ fit is performed with the Breit-Wigner curve.}
 \end{figure}
 One can clearly see the mass peak of the Z boson. A large number of events,
 however, is also situated at the beginning of the mass spectrum. A fit
@@ -269,44 +275,243 @@ performed by root with the function \ref{eq:breit}
     \label{eq:breit}
 \end{align}
 is perfeormed, with the parameters $p_0$ as a constant proportionality factor,
-$p_1$ being $m_Z$ and $p_2$ being the decay width $\Gamma$.
-Apart from the large number of events at low massm, this clearly resembles the
+$p_1$ being $m_Z$ and $p_2$ being the decay width $\Gamma$. The results are
+summarized together with all other fits in \cref{tab:fits}.
+Apart from the large number of events at low mass, this clearly resembles the
 expected $Z$ mass peak. In \cref{fig:uncutZmass}, the uncut real data is
 plotted. From the ~2 million events, almost all of them give a very small $Z$
 mass and the peak is not visible. Note that the trigger
 ``TRIG\_MUW\_W\_L2M3\_TRK10'' \cite{fprakt} is still included in the uncut case.
+Additional object level cuts are performed, which are summarized in
+\cref{tab:objectcuts}. These are identical for both $Z$ and $W$ boson analysis
+as they will effectively cancel out when calculating the efficiencies.
+The accepted and rejected events for both $Z$ monte-carlo and real data are
+shown in \cref{app:z} (\cref{fig:pt,fig:chi,fig:ehalo}).
+To further separate background events, event level cuts are performed. Firstly,
+events where only one muon are detected are rejected, as in a $Z$ decay, two
+muons are expected. Secondly, both muons should have different charge due to
+conservation of charge. Two muons with same charge indicate either two seperate
+processes both creating a positively / negatively charged muon or a cosmic
+event in which one cosmic muon crosses both detectors.
+
+
+\begin{table}
+    \centering
+    \begin{tabular}{|c|c|c|}\hline
+        parameter&condition&desription\\\hline
+        $p_{T_1}$&$>20$&transverse momentum of the first muon in the central
+        tracker\\\hline
+        $p_{T_2}$&$>15$&transverse momentum of the second muon in the central
+        tracker \\\hline
+        $\chi_{1/2}^2$&$<2$&Chi squared per d.o.f. for the track fit\\\hline
+        $E_{\text{halo}_{1/2}}$&$< 1.5$&transverse calorimeter energy in an
+        annulus of $0.1 < R < 0.4$ around the muon\\\hline
+    \end{tabular}
+    \caption{Additional object level cuts for the muons for both $Z$ and $W$
+    analysis.}
+    \label{tab:objectcuts}
+\end{table}
 
 \subsection{Cosmics}
+The cosmic-ray background stems from high energy cosmic particles entering the
+earth's atmosphere, where they decay into jets of particles. Muons are also
+created this way. Because of time dilation, they can reach the earth's surface
+before they decay, leading to the cosmic background in the detector [cite].
+In order to identify cosmic events, both timing and angular seperation are
+taken into account. First, it is expected that timing differences from muons
+originating from $Z$ decays have a negligible time difference at both muon
+detectors, since the $Z$ boson can be treated as stationary in the lab frame.
+Cosmic muons, however, should be detected at one side of the detector first and
+at a later time on the other side, since they need to travel the distance of
+the detector first. The timing difference for $Z$ monte-carlo and real data is
+plotted in \cref{fig:timing}. A maximal time difference of $\Delta t=10$\;ns
+was chosen as cut condition. However, also the simulated data shows two peaks
+at around $100$\;ns.
+Next, a two-dimensional histogram is plotted with the angular seperation
+$\Delta\eta$ and $\Delta\phi$ as parameters. $\eta$ is the pseudorapidity of the
+track and gives a measure of the tilt from the beam axis, while $\phi$  is the
+angle around the beam axis. The result is shown for the simulation and real
+data in \cref{fig:angle}. Note that so far, no angular cuts have been performed
+at all. Still, with the cuts given above, there is a clear preference for
+$\Delta\phi=\pi$ for both simulation and real data. This is desired, as this
+means that the $Z$ boson upon its decay is quasi-stationary and therefore both
+muons produced in the decay travel in opposite directions, as expected from
+momentum conservation. Therefore, a decision was made not to perform any more
+cuts containing angular information. As will be seen below, the cuts performed
+thus-far give a very satisfactory result for the reconstructed $Z$ mass peak.
+The reason for this will be discussed in \cref{sec:discussion}.
+\begin{figure}
+     \begin{center}
+         \subfigure[]{
+            \includegraphics[width=0.8\textwidth,height=6 cm]{fig/zmc_cut_timediff.pdf}
+        }\\ %  ------- End of the first row ----------------------%
+        \subfigure[]{
+            \includegraphics[width=0.8\textwidth,height=6 cm]{fig/data_cut_timediff.pdf}
+        }
+    \end{center}
+    \caption{Timing difference between the first and second muon detection for
+    the $Z$ monte-carlo (a) and the real data (b) in ns.}
+   \label{fig:timing}
+\end{figure}
+\begin{figure}
+     \begin{center}
+         \subfigure[]{
+            \includegraphics[width=0.9\textwidth]{fig/zmc_cut_etaphi.pdf}
+        }\\ %  ------- End of the first row ----------------------%
+        \subfigure[]{
+            \includegraphics[width=0.9\textwidth]{fig/data_cut_etaphi.pdf}
+        }
+    \end{center}
+    \caption{Two-dimensional histogram of the difference between pseudorapidity
+    $\Delta\eta$ and difference between azimuthal angle $\Delta\phi$ of both muons
+    for simulated (a) and real data (b). The upper plots are the accepted
+    events, the lower plots are the rejected events. With the cuts detailed
+    above, there is a clear preference of $\Delta\phi=\pi$ in both simulation
+    and real data. Also, lower pseudorapidity difference $\Delta\eta$ is more
+    common. For the uncut case, both simulation and real data shows additional
+    structure at non-$2\pi$ azimuthal difference. Note that no angular cuts
+    have been performed in either case.}
+   \label{fig:angle}
+\end{figure}
+
 \subsection{Zmass}
+The invariant $Z$ mass can be calculated directly with ROOT with the
+TLorentz-vector class. In theory, the muon mass is not needed for a
+reconstruction of the $Z$ events, as $E\approx p$ holds for the
+ultrarelativistic case, which is fullfilled for the muons in question. Finally, with the cuts performed, the $Z$ mass is plotted in
+\cref{fig:zmass1,fig:zmass2} for both $Z$ monte-carlo and real data.
+One now clearly observes the expected mass peak also in the real data. The
+rejected events mostly consist of low-$Z$-mass events and cut out very little
+from the actual mass peak, which is especially apparent in the simulated data.
+Again, a fit is performed for the Breit-Wigner curve \cref{eq:breit}. The
+results are summarized in \cref{tab:fits}.
+
+\begin{table}
+    \centering
+    \begin{tabular}{|c|c|c|}\hline
+        Data set&$m_Z$\;[GeV]&$\Gamma_Z$\;[GeV]\\\hline
+        $Z$ monte-carlo uncut&$90.69\pm0.06$&$7.612\pm0.071$\\\hline
+        $Z$ monte-carlo cut&$91.64\pm0.03$&$4.448\pm0.088$\\\hline
+        real data cut&$90.19\pm0.15$&$11.85\pm0.20$\\\hline
+        \hline
+        Theoretical result
+        \cite{pdataz}&$91.1876\pm0.0021$&$2.4952\pm0.0023$\\\hline
+    \end{tabular}
+    \caption{Summary of reconstructed $Z$ mass $m_Z$ and decay width $\Gamma_Z$
+    for both cut and uncut simulated data ,as well as real data obtained from
+    the Breit-Wigner fit.}
+    \label{tab:fits}
+\end{table}
+
+
+\begin{figure}
+     \begin{center}
+         \subfigure[]{
+       \label{fig:zmass1}
+            \includegraphics[width=0.9\textwidth]{fig/zmc_cut_zmass.pdf}
+        }\\ %  ------- End of the first row ----------------------%
+        \subfigure[]{
+       \label{fig:zmass2}
+            \includegraphics[width=0.9\textwidth]{fig/data_cut_zmass.pdf}
+        }
+    \end{center}
+    \caption{Reconstructed $Z$ mass for the simulated (a) and real data (b). On
+    the left in black, the accepted events are plotted, on the right the
+    rejected ones. Apart from a small trail on the higher mass spectrum, both
+    peaks look qualitatively the same. The cuts mostly got rid of the low $Z$-mass
+    events, as can be seen by comparison of simulation and data. A
+    $\chi^2$ fit for the Breit-Wigner curver is performed on the accepted
+    events.}
+\end{figure}
+
+
 \subsection{Reconstructing and selecting $W$ events}
 \subsection{Determination of efficiencies}
 \subsection{Determination of the $BR(W\rightarrow\mu\nu)$}
 \section{Discussion}
-
-\begin{figure}[ht!]
+\label{sec:discussion}
+\bibliography{literatur}
+\newpage
+\begin{appendices}
+\section{$Z$ boson additional plots}
+\label{app:z}
+\begin{sidewaysfigure}
+%\begin{figure}[ht!]
      \begin{center}
-        \subfigure{
-            \label{fig:first}
-            \includegraphics[width=0.45\textwidth]{fig/zmc_cut_zmass.pdf}
+         \subfigure[]{
+            \includegraphics[width=0.45\textwidth]{fig/zmc_cut_muonpt_1.pdf}
         }
-        \subfigure{
-           \label{fig:second}
-            \includegraphics[width=0.45\textwidth]{fig/zmc_uncut_zmass.pdf}
+        \subfigure[]{
+            \includegraphics[width=0.45\textwidth]{fig/data_cut_muonpt_1.pdf}
         }\\ %  ------- End of the first row ----------------------%
-        \subfigure{
-            \label{fig:third}
-            \includegraphics[width=0.45\textwidth]{fig/zmc_uncut_zmass.pdf}
+        \subfigure[]{
+            \includegraphics[width=0.45\textwidth]{fig/zmc_cut_muonpt_2.pdf}
         }
-        \subfigure{
-            \label{fig:fourth}
-            \includegraphics[width=0.45\textwidth]{fig/zmc_uncut_zmass.pdf}
+        \subfigure[]{
+            \includegraphics[width=0.45\textwidth]{fig/data_cut_muonpt_2.pdf}
         }
     \end{center}
     \caption{
-        The l-o-n-g caption for all the subfigures
-        (FirstFigure through FourthFigure) goes here.
+        $p_{T}$ for accepted (black) and rejected (red) events
+            for (a,c): the $Z$ monte-carlo data (b,d): the real data.}{
      }
-   \label{fig:subfigures}
-\end{figure}\bibliography{literatur}
+   \label{fig:pt}
+%\end{figure}\bibliography{literatur}
+\end{sidewaysfigure}
+\begin{sidewaysfigure}
+%\begin{figure}[ht!]
+     \begin{center}
+         \subfigure[]{
+            \includegraphics[width=0.45\textwidth]{fig/zmc_cut_chisqdof1.pdf}
+        }
+        \subfigure[]{
+            \includegraphics[width=0.45\textwidth]{fig/data_cut_chisqdof1.pdf}
+        }\\ %  ------- End of the first row ----------------------%
+        \subfigure[]{
+            \includegraphics[width=0.45\textwidth]{fig/zmc_cut_chisqdof2.pdf}
+        }
+        \subfigure[]{
+            \includegraphics[width=0.45\textwidth]{fig/data_cut_chisqdof2.pdf}
+        }
+    \end{center}
+    \caption{
+        $\chi^2$ for accepted (black) and rejected (red) events
+            for (a,c): the $Z$ monte-carlo data (b,d): the real data.}{
+     }
+   \label{fig:chi}
+%\end{figure}\bibliography{literatur}
+\end{sidewaysfigure}
+\begin{sidewaysfigure}
+%\begin{figure}[ht!]
+     \begin{center}
+        \subfigure[]{
+            \label{fig:first}
+            \includegraphics[width=0.45\textwidth]{fig/zmc_cut_ehalo1.pdf}
+        }
+        \subfigure[]{
+           \label{fig:second}
+            \includegraphics[width=0.45\textwidth]{fig/data_cut_ehalo1.pdf}
+        }\\ %  ------- End of the first row ----------------------%
+        \subfigure[]{
+            \label{fig:third}
+            \includegraphics[width=0.45\textwidth]{fig/zmc_cut_ehalo2.pdf}
+        }
+        \subfigure[]{
+            \label{fig:fourth}
+            \includegraphics[width=0.45\textwidth]{fig/data_cut_ehalo2.pdf}
+        }
+    \end{center}
+    \caption{
+    $E_{\text{halo}}$ for accepted (black) and rejected (red) events
+            for (a,c): the $Z$ monte-carlo data (b,d): the real data.}{
+     }
+  \label{fig:ehalo}
+
+%{()}
+
+%\end{figure}
+\end{sidewaysfigure}
+\end{appendices}
+
 \end{document}
 
