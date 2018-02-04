@@ -196,17 +196,17 @@ the composite nature of the hadrons. More specifically, the $z$-momentum of the
 interacting partons are unknown, making the invariant mass reconstruction
 impossible. However, one can define the transverse mass $M_T$, which can be
 calculated from the reconstructed transverse momentum of the neutrino
-$\vec{p}_T^\mu$. First, the missing transverse energy $MET$ is determined as
+$\bold{p}_T^\mu$. First, the missing transverse energy $MET$ is determined as
 \begin{align}
     MET\approx|\bold{p}_T^\nu=|-\bold{p}_T^\mu-\bold{u}_T,
     \label{eq:met}
-\end{align}where $\vec{u}_T$ is the transverse momentum of the hadrons [cite].
+\end{align}where $\bold{u}_T$ is the transverse momentum of the hadrons [cite].
 The transverse mass is then defined as
 \begin{align}
     M_T=\sqrt{(MET+\bold{p}_T^\mu)^2-(MET_x+p_x^\mu)^2-(MET_y+p_y^\mu)^2}.
     \label{eq:mt}
 \end{align}
-This quantity is lorantz invariant but does not peak at $M_Z$. However, the $W$
+This quantity is lorantz invariant but does not peak at $m_Z$. However, the $W$
 mass can be read off from the position of the dropoff, as the longitudinal
 component of the invariant mass is then close to zero [cite].
 
@@ -426,6 +426,105 @@ results are summarized in \cref{tab:fits}.
 
 
 \subsection{Reconstructing and selecting $W$ events}
+As outlined in \cref{sec:theory}, the invariant $W$ mass cannot be directly
+reconstructed. This is due to the neutrino in the decay products, which is not
+detectable. More specifically, the longitudinal momentum component of the $W$ is
+outside of reach because of the composite structure of the colliding protons.
+As a result, the total centre of mass energy is unknown on an event by event
+basis. As the missing neutrino momentum can only be infered from the missing energy,
+this means that the z-component of the energy is not detectable.
+It is therefore the goal to define selections that reconstruct the transverse
+mass \cref{eq:mt}. The uncut transverse mass of the $W$ monte-carlo simulation
+is shown in \cref{fig:wuncut1}. As expected, it does not peak at the $W$ mass,
+however the location of the dropoff fits the theoretical $W$ mass result of
+$m_W=80.385\pm0.015$\;GeV \cite{pdataz}. The uncut real data plot
+\cref{fig:wuncut2} does not have this feature: the background consisting mostly
+of cosmics dominates in low transverse mass regions [???]. In addition to the
+object level cuts from \cref{tab:objectcuts}, different event level cuts are
+performed:
+\begin{itemize}
+    \item $20\;\text{GeV}<$ MET $<60$\;GeV
+    \item only one muon passes the trigger (since one muon and one neutrino is
+        expected)
+\end{itemize}
+These two additional conditions are enough for a satisfactory reconstruction.
+Cosmics are automatically filtered out, since they almost always correspond to
+two muons detected at different times but only one muon is required with the
+selections. The conditon for the missing transverse energy was mostly found by
+trial and error and by comparing different paramenters of the simulated and the
+real data. The resulting MET cuts are shown in \cref{fig:met1,fig:met2}. With
+the cuts in place, both accepted distributions look similar.
+Finally, the reconstructed transverse mass of the $W$ boson can be calculated
+from \cref{eq:met}. It has to be kept in mind, that the muon is a minimal
+ionising particle and therefore does not deposit its energy into the
+calorimeter. Thus, when calculating the total missing transverse energy, the muon
+momentum has to be added which in the relativistic case is
+$E_T{_{\mu}}=p_{T_\mu}$. The formula for the transverse mass therefore reads
+\begin{align}
+    \label{eq:mt2}
+    M_T=\sqrt{(E_\text{cal}+2p_{T_{\mu}})^2-(E_{\text{cal},x})^2-(E_{\text{cal},y})^2}.
+\end{align}
+[???]
+
+\begin{figure}
+    \subfigure[]{
+        \includegraphics[width=0.45\textwidth]{fig/wmc_uncut_wmass.pdf}
+        \label{fig:wuncut1}
+    }
+    \subfigure[]{
+        \includegraphics[width=0.45\textwidth]{fig/Wdata_uncut_wmass.pdf}
+        \label{fig:wuncut2}
+    }
+    \caption{(a): Uncut transverse mass distribution of the $W$ monte-carlo
+    simulation. The dropoff occurs at around 80\;GeV, which is consistent with
+    the literature value. (b): Uncut transverse mass distribution of the real
+    data. The data is dominated by low-transverse mass events.}
+\end{figure}
+
+\begin{figure}
+    \subfigure[]{
+        \includegraphics[width=0.5\textwidth]{fig/wmc_cut_met.pdf}
+        \label{fig:met1}
+    }
+    \subfigure[]{
+        \includegraphics[width=0.5\textwidth]{fig/Wdata_cut_met.pdf}
+        \label{fig:met2}
+    }
+    \caption{Missing transverse energy distribution for both simulation (a) and
+    real data (b). Shown in black are the accepted events and in red are the rejected
+    ones. With the cuts performed both accepted distributions look close to
+    each other.}
+\end{figure}
+
+
+
+The resulting transverse energy is plotted in \cref{fig:metcut2}.
+With cuts in place, the experimental data now also shows the expected dropoff
+at around $80$\;GeV. Only around one percent of experimental events passed the
+selection criteria. Mostly low $m_T$ background was rejected. Still, also about
+one third of monte-carlo events were rejected, which might indicate an
+overselection [???].
+
+\begin{figure}
+     \begin{center}
+         \subfigure[]{
+       \label{fig:metcut1}
+            \includegraphics[width=0.9\textwidth]{fig/wmc_cut_wmass.pdf}
+        }\\ %  ------- End of the first row ----------------------%
+        \subfigure[]{
+       \label{fig:metcut2}
+            \includegraphics[width=0.9\textwidth]{fig/Wdata_cut_wmass.pdf}
+        }
+    \end{center}
+    \caption{Reconstructed transverse $W$ mass for the simulated data with cuts
+    (a) and for the cut real data (b). In black: selected events. In red:
+    rejected events. The selection mostly rejected low $m_T$ background
+    [conisting of ???]. The expected dropoff at around $80$\;GeV is now visible
+    for the experimental data. However, also about one third of monte carlo
+    events were rejected by our selection.}
+\end{figure}
+
+
 \subsection{Determination of efficiencies}
 \subsection{Determination of the $BR(W\rightarrow\mu\nu)$}
 \section{Discussion}
