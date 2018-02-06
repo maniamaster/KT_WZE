@@ -1,0 +1,48 @@
+\begin{thebibliography}{7}
+% this bibliography was produced with the style dinat.bst v2.5
+\makeatletter
+\newcommand{\dinatlabel}[1]%
+{\ifNAT@numbers\else\NAT@biblabelnum{#1}\hspace{2\labelsep}\fi}
+\makeatother
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
+
+\bibitem[pdataz()]{pdataz}
+\dinatlabel{pdataz } \emph{Partlicle Data Group: gauge boson summary sheet}.
+\newblock
+  \url{http://pdg.lbl.gov/2017/tables/rpp2017-sum-gauge-higgs-bosons.pdf}. --
+\newblock Zugriff:2018-01-31
+
+\bibitem[fprakt()]{fprakt}
+\dinatlabel{fprakt } \emph{Praktikumshandbuch}.
+\newblock master-fp.physik.uni-goettingen.de. --
+\newblock Zugriff:2018-01-31
+
+\bibitem[d0()]{d0}
+\dinatlabel{d0 } \emph{Public web page of the D\O\;experiment}.
+\newblock \url{http://www-d0.fnal.gov/public/index.html}. --
+\newblock Zugriff:2018-01-31
+
+\bibitem[tagprobe()]{tagprobe}
+\dinatlabel{tagprobe } :
+\newblock \emph{Tag and probe, twiki}.
+\newblock https://twiki.cern.ch/twiki/bin/view/CMSPublic/TagAndProbe
+
+\bibitem[efferror()]{efferror}
+\dinatlabel{efferror } :
+\newblock \emph{Treatment of Errors in Efficiency Calculations}.
+\newblock
+  \url{http://th-www.if.uj.edu.pl/~erichter/dydaktyka/Dydaktyka2012/LAB-2012/0701199v1.pdf}
+
+\bibitem[wikigsw()]{wikigsw}
+\dinatlabel{wikigsw } \emph{Wikipedia: electroweak interaction}.
+\newblock \url{https://de.wikipedia.org/wiki/Elektroschwache_Wechselwirkung}.
+  --
+\newblock Zugriff:2018-01-31
+
+\bibitem[Thomson(2013)]{thomson}
+\dinatlabel{Thomson 2013} \textsc{Thomson}, Mark:
+\newblock \emph{Modern Particle Physics}.
+\newblock Cambridge University Press, 2013
+
+\end{thebibliography}

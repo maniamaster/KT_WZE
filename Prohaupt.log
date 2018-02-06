@@ -1,0 +1,1282 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.2.27)  6 FEB 2018 14:29
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Prohaupt.tex
+(./Prohaupt.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+(./Vorlage/MFPREPORT.cls
+
+LaTeX Warning: You have requested document class `Vorlage/MFPREPORT',
+               but the document class provides `MFPREPORT'.
+
+Document Class: MFPREPORT 2010/04/06 v1.0 Vorlage Master-Forschungspraktikum Ve
+rsuchsauswertung
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2013/12/19 v3.12 KOMA-Script document class (article)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2013/12/19 v3.12 KOMA-Script package (loading files)
+
+Package scrlfile, 2013/12/19 v3.12 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+))) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2013/12/19 v3.12 KOMA-Script package (handling toc-files)
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 115.
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 116.
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 117.
+Package scrbase Info: Unknown processing state.
+(scrbase)             Processing option `twoside'
+(scrbase)             of member `.scrartcl.cls' of family
+(scrbase)             `KOMA' doesn't set
+(scrbase)             a valid state. This will be interpreted
+(scrbase)             as \FamilyKeyStateProcessed on input line 1150.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fleqn.clo
+File: fleqn.clo 1998/08/17 v1.1c Standard LaTeX option (flush left equations)
+\mathindent=\dimen102
+)
+Package scrbase Info: Unknown processing state.
+(scrbase)             Processing option `twoside'
+(scrbase)             of member `.scrartcl.cls' of family
+(scrbase)             `KOMA' doesn't set
+(scrbase)             a valid state. This will be interpreted
+(scrbase)             as \FamilyKeyStateProcessed on input line 1150.
+Class scrartcl Info: File `scrsize10pt.clo' used to setup font sizes on input l
+ine 1531.
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
+File: scrsize10pt.clo 2013/12/19 v3.12 KOMA-Script font size class option (10pt
+)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2013/12/19 v3.12 KOMA-Script package (type area)
+
+Package typearea, 2013/12/19 v3.12 KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
+\ta@bcor=\skip41
+\ta@div=\count79
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
+\footheight=\skip45
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 8
+(typearea)             BCOR = 34.1433pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 352.1029pt
+(typearea)              DIV departure   = 0%
+(typearea)              \evensidemargin = 68.57117pt
+(typearea)              \oddsidemargin  = 32.29388pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 538.0pt
+(typearea)              \topmargin      = 0.36087pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
+(typearea)              on input line 1330.
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\c@pti@nb@sid@b@x=\box26
+\c@figure=\count86
+\c@table=\count87
+\bibindent=\dimen103
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count88
+\calc@Bcount=\count89
+\calc@Adimen=\dimen104
+\calc@Bdimen=\dimen105
+\calc@Askip=\skip48
+\calc@Bskip=\skip49
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count90
+\calc@Cskip=\skip50
+)
+\c@@countconductedon=\count91
+)
+LaTeX Info: Redefining \rm on input line 14.
+LaTeX Info: Redefining \sf on input line 15.
+LaTeX Info: Redefining \tt on input line 16.
+LaTeX Info: Redefining \bf on input line 17.
+LaTeX Info: Redefining \it on input line 18.
+LaTeX Info: Redefining \sl on input line 19.
+LaTeX Info: Redefining \sc on input line 20.
+
+(./Vorlage/packages.tex
+(/usr/share/texlive/texmf-dist/tex/latex/ntgclass/a4.sty
+Package: a4 2004/04/15 v1.2g A4 based page layout
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count92
+\mult@box=\box27
+\multicol@leftmargin=\dimen106
+\c@unbalance=\count93
+\c@collectmore=\count94
+\doublecol@number=\count95
+\multicoltolerance=\count96
+\multicolpretolerance=\count97
+\full@width=\dimen107
+\page@free=\dimen108
+\premulticols=\dimen109
+\postmulticols=\dimen110
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
+\partial@page=\box28
+\last@line=\box29
+\mult@rightbox=\box30
+\mult@grightbox=\box31
+\mult@gfirstbox=\box32
+\mult@firstbox=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\c@columnbadness=\count98
+\c@finalcolumnbadness=\count99
+\last@try=\dimen111
+\multicolovershoot=\dimen112
+\multicolundershoot=\dimen113
+\mult@nat@firstbox=\box51
+\colbreak@box=\box52
+\multicol@sort@counter=\count100
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/12/03 3.9h The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/12/03 3.9h Babel common definitions
+\babel@savecnt=\count101
+\U@D=\dimen114
+)
+\l@naustrian = a dialect from \language\l@ngerman 
+\l@nswissgerman = a dialect from \language\l@ngerman 
+Package babel Info: Making " an active character on input line 88.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen115
+\Hy@linkcounter=\count102
+\Hy@pagecounter=\count103
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count104
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count105
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen116
+\Fld@menulength=\count106
+\Field@Width=\dimen117
+\Fld@charsize=\dimen118
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count107
+\c@Item=\count108
+\c@Hfootnote=\count109
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count110
+\c@bookmark@seq@number=\count111
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip53
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count112
+\uc@combtoks=\toks15
+\uc@combtoksb=\toks16
+\uc@temptokena=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks20
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks21
+\ex@=\dimen119
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen120
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count113
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count114
+\leftroot@=\count115
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count116
+\DOTSCASE@=\count117
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+\big@size=\dimen121
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count118
+\c@MaxMatrixCols=\count119
+\dotsspace@=\muskip11
+\c@parentequation=\count120
+\dspbrk@lvl=\count121
+\tag@help=\toks22
+\row@=\count122
+\column@=\count123
+\maxfields@=\count124
+\andhelp@=\toks23
+\eqnshift@=\dimen122
+\alignsep@=\dimen123
+\tagshift@=\dimen124
+\tagwidth@=\dimen125
+\totwidth@=\dimen126
+\lineht@=\dimen127
+\@envbody=\toks24
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
+\thm@preskip=\skip57
+\thm@postskip=\skip58
+\thm@headsep=\skip59
+\dth@everypar=\toks31
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup7
+)
+(/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip60
+\bibsep=\skip61
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count125
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count126
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks32
+\verbatim@line=\toks33
+\verbatim@in@stream=\read1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip62
+\subfigcapskip=\skip63
+\subfigcaptopadj=\dimen128
+\subfigbottomskip=\skip64
+\subfigcapmargin=\dimen129
+\subfiglabelskip=\skip65
+\c@subfigure=\count127
+\c@lofdepth=\count128
+\c@subtable=\count129
+\c@lotdepth=\count130
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip66
+\subfig@bottom=\skip67
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count131
+\lst@gtempboxa=\box55
+\lst@token=\toks34
+\lst@length=\count132
+\lst@currlwidth=\dimen130
+\lst@column=\count133
+\lst@pos=\count134
+\lst@lostspace=\dimen131
+\lst@width=\dimen132
+\lst@newlines=\count135
+\lst@lineno=\count136
+\lst@maxwidth=\dimen133
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count137
+\lst@skipnumbers=\count138
+\lst@framebox=\box56
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box57
+\shadowsize=\dimen134
+\@Sbox=\box58
+\do@VerbBox=\toks35
+\the@fancyput=\toks36
+\this@fancyput=\toks37
+\EndVerbatimTokens=\toks38
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read2
+)) (./Vorlage/layout.tex
+
+Class scrartcl Warning: Usage of package `fancyhdr' together
+(scrartcl)              with a KOMA-Script class is not recommended.
+(scrartcl)              I'd suggest to use 
+(scrartcl)              package `scrpage2' or `scrlayer-scrpage'.
+(scrartcl)              Nevertheless, using requested
+(scrartcl)              package `fancyhdr' on input line 8.
+
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip68
+\f@ncyO@elh=\skip69
+\f@ncyO@erh=\skip70
+\f@ncyO@olh=\skip71
+\f@ncyO@orh=\skip72
+\f@ncyO@elf=\skip73
+\f@ncyO@erf=\skip74
+\f@ncyO@olf=\skip75
+\f@ncyO@orf=\skip76
+)
+\c@thm=\count139
+\c@satz=\count140
+\c@defi=\count141
+)
+(./Vorlage/shortcuts.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/braket/braket.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2230.
+LaTeX Info: Redefining \cref on input line 2230.
+LaTeX Info: Redefining \Cref on input line 2230.
+LaTeX Info: Redefining \crefrange on input line 2230.
+LaTeX Info: Redefining \Crefrange on input line 2230.
+LaTeX Info: Redefining \cpageref on input line 2230.
+LaTeX Info: Redefining \Cpageref on input line 2230.
+LaTeX Info: Redefining \cpagerefrange on input line 2230.
+LaTeX Info: Redefining \Cpagerefrange on input line 2230.
+LaTeX Info: Redefining \labelcref on input line 2230.
+LaTeX Info: Redefining \labelcpageref on input line 2230.
+Package cleveref Info: `amsthm' support loaded on input line 2858.
+Package cleveref Info: `listings' support loaded on input line 2950.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count142
+\rotFPtop=\skip77
+\rotFPbot=\skip78
+\rot@float@box=\box59
+\rot@mess@toks=\toks39
+)
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count143
+\c@@ppsavesec=\count144
+\c@@ppsaveapp=\count145
+) (./Prohaupt.aux
+
+LaTeX Warning: Label `eq:breit' multiply defined.
+
+
+LaTeX Warning: Label `eq:breit@cref' multiply defined.
+
+)
+\openout1 = `Prohaupt.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 65.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 65.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datenumber/datenumber.sty
+Package: datenumber 2001/08/06v0.02
+
+(/usr/share/texlive/texmf-dist/tex/latex/datenumber/datenumberUSenglish.ldf
+File: datenumberUSenglish.ldf 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datenumber/datenumberenglish.ldf
+File: datenumberenglish.ldf 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datenumber/datenumbergerman.ldf
+File: datenumbergerman.ldf 
+)
+\c@@dayscnt=\count146
+\c@@startyear=\count147
+\c@datenumber=\count148
+\c@dateyear=\count149
+\c@datemonth=\count150
+\c@dateday=\count151
+\c@datedayname=\count152
+\@nom=\count153
+\@den=\count154
+)
+\AtBeginShipoutBox=\box60
+Package hyperref Info: Link coloring OFF on input line 65.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count155
+)
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
+
+(./Prohaupt.out) (./Prohaupt.out)
+\@outlinefile=\write4
+\openout4 = `Prohaupt.out'.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count156
+\scratchdimen=\dimen137
+\scratchbox=\box61
+\nofMPsegments=\count157
+\nofMParguments=\count158
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count159
+\MPscratchDim=\dimen138
+\MPnumerator=\count160
+\makeMPintoPDFobject=\count161
+\everyMPtoPDFconversion=\toks41
+)
+\c@lstlisting=\count162
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for T1+phv on input line 78.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 78.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 78.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 78.
+LaTeX Font Info:    Try loading font information for U+msa on input line 78.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 78.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+wasy on input line 78.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 78.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+Overfull \hbox (0.95184pt too wide) in paragraph at lines 78--78
+[]
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 78.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 78.
+
+Overfull \hbox (0.95184pt too wide) in paragraph at lines 78--78
+[]
+ []
+
+
+Overfull \hbox (0.95184pt too wide) in paragraph at lines 78--78
+[]
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+] (./Prohaupt.toc
+Package cleveref Info: loaded `english' language definitions on input line 1.
+)
+\tf@toc=\write5
+\openout5 = `Prohaupt.toc'.
+
+Package cleveref Info: loaded `english' language definitions on input line 84.
+Package cleveref Info: loaded `english' language definitions on input line 84.
+
+[3]
+Package cleveref Info: loaded `english' language definitions on input line 167.
+
+ [1
+
+]
+
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
+d on input line 199.
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+Package cleveref Info: loaded `english' language definitions on input line 249.
+
+Package cleveref Info: loaded `english' language definitions on input line 249.
+
+ [2]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mu' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mu' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 252.
+
+<fig/zmc_uncut_zmass.pdf, id=140, 569.12625pt x 385.44pt>
+File: fig/zmc_uncut_zmass.pdf Graphic file (type pdf)
+
+<use fig/zmc_uncut_zmass.pdf>
+Package pdftex.def Info: fig/zmc_uncut_zmass.pdf used on input line 259.
+(pdftex.def)             Requested size: 207.41913pt x 140.47563pt.
+
+<fig/data_uncut_zmass.pdf, id=141, 569.12625pt x 385.44pt>
+File: fig/data_uncut_zmass.pdf Graphic file (type pdf)
+
+<use fig/data_uncut_zmass.pdf>
+Package pdftex.def Info: fig/data_uncut_zmass.pdf used on input line 263.
+(pdftex.def)             Requested size: 207.41913pt x 140.47563pt.
+
+<fig/zmc_cut_timediff.pdf, id=153, 569.12625pt x 385.44pt>
+File: fig/zmc_cut_timediff.pdf Graphic file (type pdf)
+
+<use fig/zmc_cut_timediff.pdf>
+Package pdftex.def Info: fig/zmc_cut_timediff.pdf used on input line 347.
+(pdftex.def)             Requested size: 368.764pt x 170.71158pt.
+
+<fig/data_cut_timediff.pdf, id=154, 569.12625pt x 385.44pt>
+File: fig/data_cut_timediff.pdf Graphic file (type pdf)
+
+<use fig/data_cut_timediff.pdf>
+Package pdftex.def Info: fig/data_cut_timediff.pdf used on input line 350.
+(pdftex.def)             Requested size: 368.764pt x 170.71158pt.
+
+<fig/zmc_cut_etaphi.pdf, id=155, 569.12625pt x 385.44pt>
+File: fig/zmc_cut_etaphi.pdf Graphic file (type pdf)
+
+<use fig/zmc_cut_etaphi.pdf>
+Package pdftex.def Info: fig/zmc_cut_etaphi.pdf used on input line 360.
+(pdftex.def)             Requested size: 414.83827pt x 280.96304pt.
+
+<fig/data_cut_etaphi.pdf, id=156, 569.12625pt x 385.44pt>
+File: fig/data_cut_etaphi.pdf Graphic file (type pdf)
+
+<use fig/data_cut_etaphi.pdf>
+Package pdftex.def Info: fig/data_cut_etaphi.pdf used on input line 363.
+(pdftex.def)             Requested size: 414.83827pt x 280.96304pt.
+
+
+LaTeX Warning: Float too large for page by 14.92381pt on input line 375.
+
+Package cleveref Info: loaded `english' language definitions on input line 376.
+
+[3 <./fig/zmc_uncut_zmass.pdf, page is rotated 90 degrees> <./fig/data_uncut_zm
+ass.pdf, page is rotated 90 degrees>]
+<fig/zmc_cut_zmass.pdf, id=261, 569.12625pt x 385.44pt>
+File: fig/zmc_cut_zmass.pdf Graphic file (type pdf)
+
+<use fig/zmc_cut_zmass.pdf>
+Package pdftex.def Info: fig/zmc_cut_zmass.pdf used on input line 412.
+(pdftex.def)             Requested size: 414.83827pt x 280.96304pt.
+
+<fig/data_cut_zmass.pdf, id=262, 569.12625pt x 385.44pt>
+File: fig/data_cut_zmass.pdf Graphic file (type pdf)
+
+<use fig/data_cut_zmass.pdf>
+Package pdftex.def Info: fig/data_cut_zmass.pdf used on input line 416.
+(pdftex.def)             Requested size: 414.83827pt x 280.96304pt.
+
+
+LaTeX Warning: Float too large for page by 2.92381pt on input line 425.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 428.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 428.
+
+Package cleveref Info: loaded `english' language definitions on input line 445.
+
+Package cleveref Info: loaded `english' language definitions on input line 445.
+
+[4]
+Package cleveref Info: loaded `english' language definitions on input line 445.
+
+Package cleveref Info: loaded `english' language definitions on input line 445.
+
+ [5 <./fig/zmc_cut_timediff.pdf, page is rotated 90 degrees> <./fig/data_cut_ti
+mediff.pdf, page is rotated 90 degrees>]
+Package cleveref Info: loaded `english' language definitions on input line 445.
+
+Package cleveref Info: loaded `english' language definitions on input line 445.
+
+ [6 <./fig/zmc_cut_etaphi.pdf, page is rotated 90 degrees> <./fig/data_cut_etap
+hi.pdf, page is rotated 90 degrees>]
+Package cleveref Info: loaded `english' language definitions on input line 445.
+
+Package cleveref Info: loaded `english' language definitions on input line 445.
+
+[7 <./fig/zmc_cut_zmass.pdf, page is rotated 90 degrees> <./fig/data_cut_zmass.
+pdf, page is rotated 90 degrees>]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 446.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+<fig/wmc_uncut_wmass.pdf, id=555, 569.12625pt x 385.44pt>
+File: fig/wmc_uncut_wmass.pdf Graphic file (type pdf)
+
+<use fig/wmc_uncut_wmass.pdf>
+Package pdftex.def Info: fig/wmc_uncut_wmass.pdf used on input line 473.
+(pdftex.def)             Requested size: 207.41913pt x 140.47563pt.
+
+<fig/Wdata_uncut_wmass.pdf, id=556, 569.12625pt x 385.44pt>
+File: fig/Wdata_uncut_wmass.pdf Graphic file (type pdf)
+
+<use fig/Wdata_uncut_wmass.pdf>
+Package pdftex.def Info: fig/Wdata_uncut_wmass.pdf used on input line 477.
+(pdftex.def)             Requested size: 207.41913pt x 140.47563pt.
+
+<fig/wmc_cut_met.pdf, id=557, 569.12625pt x 385.44pt>
+File: fig/wmc_cut_met.pdf Graphic file (type pdf)
+
+<use fig/wmc_cut_met.pdf>
+Package pdftex.def Info: fig/wmc_cut_met.pdf used on input line 488.
+(pdftex.def)             Requested size: 230.46727pt x 156.0847pt.
+
+<fig/Wdata_cut_met.pdf, id=558, 569.12625pt x 385.44pt>
+File: fig/Wdata_cut_met.pdf Graphic file (type pdf)
+
+<use fig/Wdata_cut_met.pdf>
+Package pdftex.def Info: fig/Wdata_cut_met.pdf used on input line 492.
+(pdftex.def)             Requested size: 230.46727pt x 156.0847pt.
+
+Overfull \hbox (11.90001pt too wide) in paragraph at lines 488--496
+[][] [][] 
+ []
+
+<fig/wmc_cut_wmass.pdf, id=560, 569.12625pt x 385.44pt>
+File: fig/wmc_cut_wmass.pdf Graphic file (type pdf)
+
+<use fig/wmc_cut_wmass.pdf>
+Package pdftex.def Info: fig/wmc_cut_wmass.pdf used on input line 513.
+(pdftex.def)             Requested size: 414.83827pt x 280.96304pt.
+
+<fig/Wdata_cut_wmass.pdf, id=561, 569.12625pt x 385.44pt>
+File: fig/Wdata_cut_wmass.pdf Graphic file (type pdf)
+
+<use fig/Wdata_cut_wmass.pdf>
+Package pdftex.def Info: fig/Wdata_cut_wmass.pdf used on input line 517.
+(pdftex.def)             Requested size: 414.83827pt x 280.96304pt.
+Package cleveref Info: loaded `english' language definitions on input line 556.
+
+Package cleveref Info: loaded `english' language definitions on input line 556.
+
+ [8 <./fig/wmc_uncut_wmass.pdf, page is rotated 90 degrees> <./fig/Wdata_uncut_
+wmass.pdf, page is rotated 90 degrees>]
+Package cleveref Info: loaded `english' language definitions on input line 608.
+
+Package cleveref Info: loaded `english' language definitions on input line 608.
+
+ [9 <./fig/wmc_cut_met.pdf, page is rotated 90 degrees> <./fig/Wdata_cut_met.pd
+f, page is rotated 90 degrees>]
+Package cleveref Info: loaded `english' language definitions on input line 608.
+
+Package cleveref Info: loaded `english' language definitions on input line 608.
+
+ [10 <./fig/wmc_cut_wmass.pdf, page is rotated 90 degrees> <./fig/Wdata_cut_wma
+ss.pdf, page is rotated 90 degrees>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 625.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 625.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mu' on input line 625.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nu' on input line 625.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 625.
+
+(./Prohaupt.bbl
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 13.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Underfull \hbox (badness 3068) in paragraph at lines 11--15
+[]\T1/ptm/m/it/10 Partlicle Data Group: gauge bo-son sum-mary sheet\T1/ptm/m/n/
+10 .  []$\T1/pcr/m/n/10 http : / / pdg . lbl . gov / 2017 / tables /
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 22--25
+[]\T1/ptm/m/it/10 Public web page of the DØexperiment\T1/ptm/m/n/10 .  []$\T1/p
+cr/m/n/10 http : / / www-[]d0 . fnal . gov / public / index . html$[]\T1/ptm/m/
+n/10 . --
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 38--42
+[]\T1/ptm/m/it/10 Wikipedia: elec-troweak in-ter-ac-tion\T1/ptm/m/n/10 .  []$\T
+1/pcr/m/n/10 https : / / de . wikipedia . org / wiki / Elektroschwache _
+ []
+
+)
+Package cleveref Info: loaded `english' language definitions on input line 652.
+
+Package cleveref Info: loaded `english' language definitions on input line 652.
+
+ [11]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 654.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 654.
+
+<fig/zmc_cut_muonpt_1.pdf, id=875, 569.12625pt x 385.44pt>
+File: fig/zmc_cut_muonpt_1.pdf Graphic file (type pdf)
+
+<use fig/zmc_cut_muonpt_1.pdf>
+Package pdftex.def Info: fig/zmc_cut_muonpt_1.pdf used on input line 661.
+(pdftex.def)             Requested size: 307.28767pt x 208.11685pt.
+
+<fig/data_cut_muonpt_1.pdf, id=876, 569.12625pt x 385.44pt>
+File: fig/data_cut_muonpt_1.pdf Graphic file (type pdf)
+
+<use fig/data_cut_muonpt_1.pdf>
+Package pdftex.def Info: fig/data_cut_muonpt_1.pdf used on input line 664.
+(pdftex.def)             Requested size: 307.28767pt x 208.11685pt.
+
+<fig/zmc_cut_muonpt_2.pdf, id=877, 569.12625pt x 385.44pt>
+File: fig/zmc_cut_muonpt_2.pdf Graphic file (type pdf)
+
+<use fig/zmc_cut_muonpt_2.pdf>
+Package pdftex.def Info: fig/zmc_cut_muonpt_2.pdf used on input line 667.
+(pdftex.def)             Requested size: 307.28767pt x 208.11685pt.
+
+<fig/data_cut_muonpt_2.pdf, id=878, 569.12625pt x 385.44pt>
+File: fig/data_cut_muonpt_2.pdf Graphic file (type pdf)
+
+<use fig/data_cut_muonpt_2.pdf>
+Package pdftex.def Info: fig/data_cut_muonpt_2.pdf used on input line 670.
+(pdftex.def)             Requested size: 307.28767pt x 208.11685pt.
+
+<fig/zmc_cut_chisqdof1.pdf, id=879, 569.12625pt x 385.44pt>
+File: fig/zmc_cut_chisqdof1.pdf Graphic file (type pdf)
+
+<use fig/zmc_cut_chisqdof1.pdf>
+Package pdftex.def Info: fig/zmc_cut_chisqdof1.pdf used on input line 684.
+(pdftex.def)             Requested size: 307.28767pt x 208.11685pt.
+
+<fig/data_cut_chisqdof1.pdf, id=880, 569.12625pt x 385.44pt>
+File: fig/data_cut_chisqdof1.pdf Graphic file (type pdf)
+
+<use fig/data_cut_chisqdof1.pdf>
+Package pdftex.def Info: fig/data_cut_chisqdof1.pdf used on input line 687.
+(pdftex.def)             Requested size: 307.28767pt x 208.11685pt.
+
+<fig/zmc_cut_chisqdof2.pdf, id=881, 569.12625pt x 385.44pt>
+File: fig/zmc_cut_chisqdof2.pdf Graphic file (type pdf)
+
+<use fig/zmc_cut_chisqdof2.pdf>
+Package pdftex.def Info: fig/zmc_cut_chisqdof2.pdf used on input line 690.
+(pdftex.def)             Requested size: 307.28767pt x 208.11685pt.
+
+<fig/data_cut_chisqdof2.pdf, id=882, 569.12625pt x 385.44pt>
+File: fig/data_cut_chisqdof2.pdf Graphic file (type pdf)
+
+<use fig/data_cut_chisqdof2.pdf>
+Package pdftex.def Info: fig/data_cut_chisqdof2.pdf used on input line 693.
+(pdftex.def)             Requested size: 307.28767pt x 208.11685pt.
+
+<fig/zmc_cut_ehalo1.pdf, id=883, 569.12625pt x 385.44pt>
+File: fig/zmc_cut_ehalo1.pdf Graphic file (type pdf)
+
+<use fig/zmc_cut_ehalo1.pdf>
+Package pdftex.def Info: fig/zmc_cut_ehalo1.pdf used on input line 708.
+(pdftex.def)             Requested size: 307.28767pt x 208.11685pt.
+
+<fig/data_cut_ehalo1.pdf, id=884, 569.12625pt x 385.44pt>
+File: fig/data_cut_ehalo1.pdf Graphic file (type pdf)
+
+<use fig/data_cut_ehalo1.pdf>
+Package pdftex.def Info: fig/data_cut_ehalo1.pdf used on input line 712.
+(pdftex.def)             Requested size: 307.28767pt x 208.11685pt.
+
+<fig/zmc_cut_ehalo2.pdf, id=885, 569.12625pt x 385.44pt>
+File: fig/zmc_cut_ehalo2.pdf Graphic file (type pdf)
+
+<use fig/zmc_cut_ehalo2.pdf>
+Package pdftex.def Info: fig/zmc_cut_ehalo2.pdf used on input line 716.
+(pdftex.def)             Requested size: 307.28767pt x 208.11685pt.
+
+<fig/data_cut_ehalo2.pdf, id=886, 569.12625pt x 385.44pt>
+File: fig/data_cut_ehalo2.pdf Graphic file (type pdf)
+
+<use fig/data_cut_ehalo2.pdf>
+Package pdftex.def Info: fig/data_cut_ehalo2.pdf used on input line 720.
+(pdftex.def)             Requested size: 307.28767pt x 208.11685pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 734.
+Package cleveref Info: loaded `english' language definitions on input line 734.
+
+ [12]
+Package cleveref Info: loaded `english' language definitions on input line 734.
+
+ [13 <./fig/zmc_cut_muonpt_1.pdf, page is rotated 90 degrees> <./fig/data_cut_m
+uonpt_1.pdf, page is rotated 90 degrees> <./fig/zmc_cut_muonpt_2.pdf, page is r
+otated 90 degrees> <./fig/data_cut_muonpt_2.pdf, page is rotated 90 degrees>]
+Package cleveref Info: loaded `english' language definitions on input line 734.
+
+ [14 <./fig/zmc_cut_chisqdof1.pdf, page is rotated 90 degrees> <./fig/data_cut_
+chisqdof1.pdf, page is rotated 90 degrees> <./fig/zmc_cut_chisqdof2.pdf, page i
+s rotated 90 degrees> <./fig/data_cut_chisqdof2.pdf, page is rotated 90 degrees
+>]
+Package cleveref Info: loaded `english' language definitions on input line 734.
+
+ [15 <./fig/zmc_cut_ehalo1.pdf, page is rotated 90 degrees> <./fig/data_cut_eha
+lo1.pdf, page is rotated 90 degrees> <./fig/zmc_cut_ehalo2.pdf, page is rotated
+ 90 degrees> <./fig/data_cut_ehalo2.pdf, page is rotated 90 degrees>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 734.
+ (./Prohaupt.aux
+Package cleveref Info: loaded `english' language definitions on input line 21.
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 734.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 734.
+Package rerunfilecheck Info: File `Prohaupt.out' has not changed.
+(rerunfilecheck)             Checksum: 23093217F1763DED9A4726BC8C8BF934;964.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 734.
+ ) 
+Here is how much of TeX's memory you used:
+ 14507 strings out of 493304
+ 222293 string characters out of 6139871
+ 391739 words of memory out of 5000000
+ 17538 multiletter control sequences out of 15000+600000
+ 63153 words of font info for 101 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 47i,14n,50p,751b,614s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/wasy/wasy10.pfb>
+Output written on Prohaupt.pdf (18 pages, 4916757 bytes).
+PDF statistics:
+ 1510 PDF objects out of 1728 (max. 8388607)
+ 787 compressed objects within 8 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+

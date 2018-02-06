@@ -526,7 +526,126 @@ overselection [???].
 
 
 \subsection{Determination of efficiencies}
+In order to calculate the branching ration in \cref{ss:br}, one first has to
+calculate both the trigger- and the reconstruction efficiencies. The trigger
+efficiency is needed, since not every muon event will trigger within the
+detector. The ones that are missed have to be accounted for. The trigger
+efficiency is calculated by the independent trigger method: First, the number
+of events $N_\text{indep}$ are counted that pass the independant trigger
+$TRIG_\text{Independant}$, aswell as all object level cuts.
+The independent trigger is only determined by certain calorimeter conditions and therefore
+unhinged from the muon detection. Next, all events $N_\text{trig}$ that
+additionally pass the MUW\_W\_L2M3\_TRK10 trigger used in the analysis prior is
+calculated.
+The ratio
+\begin{align}
+    \label{eq:trigeff}
+    \epsilon_\text{trig}=\frac{N_\text{trig}}{N_\text{indep}}
+\end{align}
+is called the trigger efficiency.
+One obtains
+\begin{align}
+    \label{eq:trigeffvalue}
+    \epsilon_\text{trig}=0.623.
+\end{align}
+The question now is, how to gauge the error for this efficiency. One way is to
+calculate the standard deviation of a binonial distribution
+\begin{align}
+    \label{eq:binomial}
+    P(k|n,\epsilon_{trig})=\frac{n!}{k!(n-k)!}\epsilon^k(1-\epsilon)^{n-k}.
+\end{align}
+This seems appropriate, since the probability that the special trigger is
+passed for a single event out of the number of all independent events $n$ is
+independent from all other events and also identically distributed. Therefore,
+we have a sum of independent, identically distributed random variables, which
+gives the probability that $k$ out of $n$ independent events pass the
+trigger. The variance for the number of passed events $k$ is now
+$V(k)=n\epsilon(1-\epsilon)$ \cite{efferror}, from which follows via error
+propagation
+\begin{align}
+    \label{eq:kstd}
+    V(\epsilon)=V(k/n)=\frac{V(k)}{n^2}=\frac{\epsilon(1-\epsilon)}{n}.
+\end{align}
+The potential problem with this treatment is that the trigger efficiency
+$\epsilon$ is what is calculated and not given. Therefore, the error depends on
+the measurement of $\epsilon$. A more correct approach would be to use
+bayes-theorem and calculate the probability that $\epsilon$ is the real
+efficiency, based on the measurements of $k$ and $n$. More detail can be found
+in \cite{efferror}. Here, we assume that the binomial approach works,
+especially since the biggest uncertainty comes from the reconstruction
+efficiencies. We thus have for the uncertainty
+\begin{align}
+    \label{eq:uncerteff}
+    \sigma_{\epsilon_\text{trig}}=\sqrt{V(\epsilon_\text{trig})}=\sqrt{\frac{\epsilon_\text{trig}(1-\epsilon_\text{trig})}{n}}.
+\end{align}
+Unfortunately it was forgotten to calculate the number of events that pass the
+independent trigger $n$. In the uncut case we had around 3 million events. Even
+with the very strict guess that only $n=50000$ events were to pass the
+independent trigger, this would mean an uncertainty of
+$\sigma_{\epsilon_\text{trig}}=0.002$, which is a reasonable value considering
+that the errors for the reconstruction uncertainties can only be guessed as
+well. For the $Z$ boson, the trigger efficiency has to be slightly modified,
+since there are two seperate muons that can be detected:
+\begin{align}
+    \label{eq:trigeffZ}
+    \epsilon_\text{trig,Z}=\epsilon_\text{trig}^2+\epsilon_\text{trig}(1-\epsilon_\text{trig})+(1-\epsilon_\text{trig})\epsilon_\text{trig}=-\epsilon_\text{trig}^2+2\epsilon_\text{trig},
+\end{align}
+which is the sum of the probabilities that both muons trigger and the
+probability that exactly one muon triggers.
+
+Next, the reconstruction efficiencies are determined, which for both bosens are
+defined by
+\begin{align}
+    \label{eq:receff}
+    \epsilon_\text{rec}=\frac{\text{\# of reconstructed events in
+    monte-carlo}}{\text{\# total events in monte carlo}}.
+\end{align}
+The results are
+\begin{align}
+    \label{eq:receffres}
+    \epsilon_\text{rec,W}=\frac{42452}{60666}=0.700,\qquad
+    \epsilon_\text{rec,Z}=\frac{12399}{40687}=0.305.
+\end{align}
+Additionaly, the misidentification rate
+\begin{align}
+    \label{eq:miss}
+\epsilon_\text{miss}=\frac{\text{\# reconstructed fake $W$
+bosons}}{\text{\# total $Z$ bosons}}=\frac{14641}{40687}=0.360
+\end{align}
+ has to be taken into
+acount. It is calculated by running the $W$ selection algorithm over the $Z$
+monte-carlo data to find how many are misidentified.
+It has to be assumed that this misidentification rate as calculated solely for
+tthe simulated data reflects the real world misidentification of $W$ bosons.
+This is a crude approximation. Idially one would like to directly calculate
+this value from the experimental data. For this one would need to identify
+events where a muon is detected but none is found, which is out of scope
+of this report. For more details see the ``tag and probe method`` \cite{tagprobe}.
+
 \subsection{Determination of the $BR(W\rightarrow\mu\nu)$}
+The ratio of $W$ and $Z$ events is given by \cite{fprakt}
+\begin{align}
+    \label{eq:R}
+    R=\frac{\sigma(p\bar p \rightarrow W+X)BR(W\rightarrow\mu\nu)}{\sigma(p\bar
+    p \rightarrow Z+X)BR(Z\rightarrow\mu\mu)}=\frac{N_W}{N_Z},
+\end{align}
+where $N_{W/Z}$ is the total amount of real $W/Z$ events (not just those that
+passed the trigger). The number of reconstructed events can be written in terms
+of the true number contained in the data:
+\begin{align}
+    \label{eq:waddap}
+    N_{\text{rec},W}&=(N_W \epsilon_\text{rec,W}+N_Z\epsilon_\text{miss})\epsilon_{\text{trig},W},\\
+    N_{\text{rec},Z}&=(N_W \epsilon_\text{rec,Z})\epsilon_{\text{trig},Z}
+\end{align}
+Rearranging the terms from \cref{eq:R,eq:waddap} one finally obtains
+\begin{align}
+    \label{eq:BRRR}
+    BR(W\rightarrow\mu\nu)=(\frac{N_{\text{rec},W}\epsilon_{\text{rec},Z}\epsilon_{\text{trig},Z}}{N_{\text{rec},W}\epsilon_{\text{rec},Z}\epsilon_{\text{trig},Z}}-\frac{\epsilon_{\text{miss}}}{\epsilon_{\text{rec},W}})\frac{\sigma(p\bar
+    p\rightarrow Z+X)BR(W\rightarrow\mu\mu)}{\sigma(p\bar p\rightarrow
+    W+X)}=9.95\%.
+\end{align}
+
+\label{ss:br}
 \section{Discussion}
 \label{sec:discussion}
 \bibliography{literatur}
