@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{9}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -22,6 +22,16 @@
 \dinatlabel{d0 } \emph{Public web page of the D\O\;experiment}.
 \newblock \url{http://www-d0.fnal.gov/public/index.html}. --
 \newblock Zugriff:2018-01-31
+
+\bibitem[pythia()]{pythia}
+\dinatlabel{pythia } :
+\newblock \emph{Pythia homepage}.
+\newblock \url{http://home.thep.lu.se/Pythia/}
+
+\bibitem[root()]{root}
+\dinatlabel{root } :
+\newblock \emph{ROOT homepage}.
+\newblock \url{https://root.cern.ch/}
 
 \bibitem[tagprobe()]{tagprobe}
 \dinatlabel{tagprobe } :

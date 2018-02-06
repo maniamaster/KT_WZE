@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {4.2}Cosmics}{4}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Zmass}{4}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Reconstructing and selecting $W$ events}{4}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Determination of efficiencies}{8}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.5}Determination of efficiencies}{9}{subsection.4.5}
 \contentsline {subsection}{\numberline {4.6}Determination of the $BR(W\rightarrow \mu \nu )$}{11}{subsection.4.6}
 \contentsline {section}{\numberline {5}Discussion}{11}{section.5}
-\contentsline {section}{\numberline {A}$Z$ boson additional plots}{12}{Appendix.1.A}
+\contentsline {section}{\numberline {A}$Z$ boson additional plots}{13}{Appendix.1.A}
